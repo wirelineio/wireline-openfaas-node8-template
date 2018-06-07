@@ -1,0 +1,21 @@
+{
+  "name": "service-template",
+  "version": "0.0.1",
+  "description": "Wireline Test Service.",
+  "license": "UNLICENSED",
+  "repository": "https://github.com/wirelineio/wireline-openfaas-node8-template",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "copy-webpack-plugin": "^4.5.1",
+    "webpack": "^3.11.0",
+    "webpack-cli": "^3.0.0",
+    "zip-webpack-plugin": "^2.1.0"
+  },
+  "dependencies": {
+    "@wirelineio/sdk": "^0.0.1",
+    "source-map-support": "^0.5.4"
+  }
+}
