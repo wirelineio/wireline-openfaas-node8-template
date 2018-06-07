@@ -2,13 +2,15 @@
 
 # Routes
 
-Routes are constructed dynamically based on your `module.exports`.
-If `module.exports` is a function, it is assign a catch-all route  of `/*`.
+Proper request routing requires an OpenFaaS Gateway with these patches: https://github.com/openfaas/faas/issues/716
 
-If it is an object, a route is assign for each member that is a function.
-The name `root` is treated specially, and is assign to '/'.
+In the Wireline OpenFaaS template, routes are constructed dynamically based the `module.exports` of your handler.
+If `module.exports` is a function, it is assigned a catch-all route  of `/*`.
 
-For example, the following would have the routes '/', 'status', and 'test':
+If it is an object, a route is assigned for each 'own' member that is a function.
+The name `root` is treated specially, and is assigned to '/'.
+
+For example, the following would have the routes '/', '/status', and '/test':
 
 ```
 module.exports = {
