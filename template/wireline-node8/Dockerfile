@@ -32,8 +32,8 @@ COPY index.js ./
 # COPY function node packages and install, adding this as a separate
 # entry allows caching of npm install
 WORKDIR /home/app/function
-COPY function/*.json ./
-RUN npm i || :
+#COPY function/*.json ./
+#RUN npm i || :
 
 # COPY function files and folders
 COPY function/ ./
