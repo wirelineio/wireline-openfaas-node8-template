@@ -1,5 +1,9 @@
 # Wireline Node8 OpenFaaS template
 
+# IMPORTANT
+
+You want this for manually bootstrapping a service into Docker or K8s.  You do not want this if you are simply creating a Wireline service to be deployed using the normal Wireline toolchain (eg, `wrl svc`, `wrl stack`).  For that you want the standard template: https://github.com/wirelineio/service-template
+
 # Routes
 
 Proper request routing requires an OpenFaaS Gateway with these patches: https://github.com/openfaas/faas/issues/716
