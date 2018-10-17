@@ -1,2 +1,2 @@
 language: wireline-node8
-fprocess: node index.js
+fprocess: wire run
